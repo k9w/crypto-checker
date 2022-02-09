@@ -1,10 +1,5 @@
-This plaintext document outlines my thought process while designing
+This plaintext document outlines our thought process while designing
 this application.
-
-Solar-year = 365 Earth-days
-
-Let's not consider leap years. In fact we'll only work with units of
-years, not days.
 
 
 Expected input:

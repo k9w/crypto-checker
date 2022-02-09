@@ -84,9 +84,8 @@ You can find more of our work at:
   browser._
 
 * _To add to and improve the project with Test-Driven Development
-  rules, add your ideas to planHowTheAppWorks.txt (not used in this 
-  project). Then modify or add to the tests first, then write new code 
-  and see if the tests pass._
+  rules, add your ideas to planHowTheAppWorks.txt. Then modify or add to 
+  the tests first, then write new code and see if the tests pass._
 
 * _If you like this project, please contribute issues and especially
   pull requests to improve it._

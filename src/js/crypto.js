@@ -1,4 +1,4 @@
-export default class CLASSNAMEHERE {         // this one
+export default class CryptoChecker {
   static FUNCTIONNAMEHERE() {                // this one
     return new Promise(function(resolve, reject) {
       let request = new XMLHttpRequest();
