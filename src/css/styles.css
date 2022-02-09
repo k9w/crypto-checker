@@ -5,3 +5,7 @@ body {
 #result {
   display: none;
 }
+
+#attribution {
+  text-align: center;
+}

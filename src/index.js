@@ -1,18 +1,13 @@
+import 
+
+
 $(document).ready(function() {
-  $('#dinoaur-form').submit(function(event) {
+  $('').submit(function(event) {
     event.preventDefault();
-    result = $('result').val();
+    // result = $('result').val();
 
-    let promise = Dinosaur.getDinoWords();
-    promise.then(function(response) {
-      const body = JSON.parse(response);
-
-    }, function(error) {
-
-    });
     
-    
-    $('.result').html("");
+    // $('.result').html("");
   });  
 });
 
