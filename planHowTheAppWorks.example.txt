@@ -1,0 +1,158 @@
+This plaintext document outlines my thought process while designing
+this application.
+
+Solar-year = 365 Earth-days
+
+Let's not consider leap years. In fact we'll only work with units of
+years, not days.
+
+
+Expected input:
+
+ - User's age
+
+ - User's life expectancy
+
+ - User does not pick a planet
+
+
+For each planet listed in the next section below, output this:
+
+ - The user's age in that planet's years.
+
+ - The user's years remaining to live, based on that planet's
+   years. OR
+
+ - The user's years lived past their life expectancy, based on that
+   planet's years.
+
+
+To achieve that, do this:
+
+Define a class object constructor PlanetOrbits with the following
+properties and values as constants.
+
+Planet 	       Planet's year in Earth years
+
+Mercury	        0.24
+Venus	        0.62
+Mars	        1.88
+Jupiter	       11.86
+
+
+Define a class object constructor UserAgeAndLifeExpectancy with
+initial properties:
+
+ - userAgeInput
+
+ - userLifeExpectancyInput
+
+Additional properties can be added from methods defined below.
+
+
+Instantiate a class object planetOrbits from its constructor.
+
+
+Instantiate a class object userAgeAndLifeExpectancy from its
+constructor.
+
+
+Define a method earthYearsRemainingToLive to subtract the user's
+current age from the life expectancy they entered to get Earth years
+remaining to live. If the user's age is higher than their life
+expectancy, instead output the number of years the user has lived past
+their life expectancy.
+
+Output:
+
+ - userEarthYearsRemainingToLive OR
+
+ - earthYearsLivedPastTheLifeExpectancy
+
+Add one of those variables, with its value, as a new third property to
+the object userAgeAndLifeExpectancy.
+
+
+Define a method convertEarthYearsToOtherPlanetYears to loop through
+each of these inputs:
+
+ - userAgeInput
+
+ - userLifeExpectancyInput
+
+ - userEarthYearsRemainingToLive OR
+
+ - earthYearsLivedPastTheLifeExpectancy
+
+For each planet, multiply or divide the number value by the constant
+stored for that planet property in object planetOrbits.
+
+
+For example, here is how it would look with
+ userEarthYearsRemainingToLive:
+
+Mercury:
+
+ - ageInMercuryYears
+
+ - mercuryYearsRemainingToLive
+
+
+Venus:
+
+ - ageInVenusYears
+
+ - venusYearsRemainingToLive
+
+
+Mars:
+
+ - ageInMarsYears
+
+ - marsYearsRemainingToLive
+
+
+Jupiter:
+
+ - ageInJupiterYears
+
+ - jupiterYearsRemainingToLive
+
+
+As a second example, here is how it would look with
+earthYearsLivedPastTheLifeExpectancy:
+
+
+Mercury:
+
+ - ageInMercuryYears
+
+ - mercuryYearsLivedPastTheLifeExpectancy
+
+
+Venus:
+
+ - ageInVenusYears
+
+ - venusYearsLivedPastTheLifeExpectancy
+
+
+Mars:
+
+ - ageInMarsYears
+
+ - marsYearsLivedPastTheLifeExpectancy
+
+
+Jupiter:
+
+ - ageInJupiterYears
+
+ - jupiterYearsLivedPastTheLifeExpectancy
+
+
+As the loop progresses, add each variable and value as a new property
+to the object userAgeAndLifeExpectancy.
+
+
+Display the results to the user.
