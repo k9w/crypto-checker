@@ -6,6 +6,7 @@
 
  * _Alex Adamovic_
  * _Kevin Williams_
+ * _Drew Henderson_
 
 ## Technologies Used
 
@@ -33,6 +34,7 @@ You can find more of our work at:
 
 * https://github.com/alexadamovic
 * https://github.com/k9w
+* https://github.com/drewhendersongithub
 
 ## Setup/Installation Requirements
 
@@ -42,12 +44,13 @@ You can find more of our work at:
 * _Clone the project from your repo to your machine or preferred
   location and cd into its folder._
 
-* _[Get an API Key](https://p.nomics.com/pricing) and follow the instructions for personal or paid use, including [proper attribution](https://p.nomics.com/pricing#attribution), which is:_
+* _[Get an API Key](https://p.nomics.com/cryptocurrency-bitcoin-api) and retain [the attribution](https://p.nomics.com/pricing#attribution) we've included in our HTML for personal use._
 
 
 > You'll need to include a "do follow" link on your home page that says "Crypto Market Cap & Pricing Data Provided By Nomics". Be sure to link the phrase "Crypto Market Cap & Pricing Data Provided By Nomics" to "https://nomics.com". Your attribution should look like the following:
 
-> Crypto Market Cap & Pricing Data Provided By Nomics.
+> [Crypto Market Cap & Pricing Data Provided By Nomics](https://nomics.com).
+
 
 
 * _You'll need the Node Package Manager (npm) to build the project. To set it up, install [Node JS](https://nodejs.org) for your platform._
@@ -99,7 +102,7 @@ You can find more of our work at:
 
 The code which originated in this project is covered by the [ISC
 License](https://choosealicense.com/licenses/isc). See the file called
-[LICENSE](https://github.com/k9w/super-galactic/blob/main/LICENSE) in
+[LICENSE](https://github.com/k9w/crypto-checker/blob/main/LICENSE) in
 this same folder for distribution and liability terms as well as
 copyright holder info.
 

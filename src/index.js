@@ -36,8 +36,7 @@ $(document).ready(function() {
     clearFields();
     if (currency.length === 3) {
       makeApiCall(currency);
-    }
-    else {
+    } else {
       $('#show-errors').text(`You can only enter 3 characters, no more, no less.`);
     }
   });  
