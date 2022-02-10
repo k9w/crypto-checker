@@ -77,19 +77,6 @@ You can find more of our work at:
   run in the browser.  Concatenating and minifying into one file
   speeds up the code in the browser.
 
-* _Run the pre-defined tests with 'npm run test'._
-
-* _Observe and use the application in the Webpack server
-  (http://localhost:8080) or paste the contents of dist/bundle.js into
-  the DevTools console in
-  [Firefox](https://www.mozilla.org/en-US/firefox),
-  [Chrome](https://www.google.com/chrome), or your preferred web
-  browser._
-
-* _To add to and improve the project with Test-Driven Development
-  rules, add your ideas to planHowTheAppWorks.txt. Then modify or add to 
-  the tests first, then write new code and see if the tests pass._
-
 * _If you like this project, please contribute issues and especially
   pull requests to improve it._
 
