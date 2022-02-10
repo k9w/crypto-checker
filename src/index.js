@@ -12,13 +12,16 @@ function clearFields() {
 
 function getElements(response) {
   console.log(response);
-  if (!response.currency) {
-    $('#show-errors').text(`Something else went wrong this time. Error: ${response}`);
+  if (typeof response === "string") {
+    $('#show-errors').text(`error on our end: ${response}`);
+  } else if (!response[0]) {
+    $('#show-errors').text(`error on your end: This currency doesn't exist. Try again!`);
     return;
-  } else if (response.currency.length === 0) {
-    $('#show-currency').text(`No currencies found.`);
-  } else if (response.currency) {
-    $('#show-currency').text(`Here is the description for ${response.currency}. ${response.currency.description}`);
+  } else if (response[0]) {
+    $('#show-currency').text(`Here is the description for ${response[0].name}. ${response[0].description}`);
+    if (response[0].description === "") {
+      $('#show-currency').text(`There is no description for ${response[0].name}.`);
+    }
   }
 }
 
@@ -29,8 +32,13 @@ async function makeApiCall(currency) {
 
 $(document).ready(function() {
   $('#get-crypto').click(function() {
-    let currency = $('#search-field').val();
+    let currency = $('#search-field').val().toUpperCase();
     clearFields();
-    makeApiCall(currency);    
+    if (currency.length === 3) {
+      makeApiCall(currency);
+    }
+    else {
+      $('#show-errors').text(`You can only enter 3 characters, no more, no less.`);
+    }
   });  
 });
