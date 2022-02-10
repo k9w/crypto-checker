@@ -8,7 +8,7 @@ Expected input:
 
  - An API Key
 
- - User does not pick a planet
+ - 
 
 
 Example API requests:
@@ -16,10 +16,12 @@ Example API requests:
 Ticker for bitcoin (BTC):
 https://api.nomics.com/v1/currencies/ticker?key=your-key-here&ids=BTC
 
+https://api.nomics.com/v1/currencies?key=${process.env.api_key}&ids=${currency}
+
 Ticker for bitcoin (BTC) for the last 7 days:
 https://api.nomics.com/v1/currencies/ticker?key=your-key-here&ids=BTC&interval=7d
 
-
+Stretch goal, after MVP.
 Nomics library for Node.JS, in TypeScript:
 https://github.com/mikunimaru/nomics
 

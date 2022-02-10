@@ -1,18 +1,14 @@
 export default class CryptoChecker {
-  static FUNCTIONNAMEHERE() {                // this one
-    return new Promise(function(resolve, reject) {
-      let request = new XMLHttpRequest();
-      const url = `URLHERE`;                 // this one
-      request.onload = function() {
-        if (this.status === 200) {
-          resolve(request.response);
-        } else {
-          reject(request.response);
-        }
+  static async getCurrency(currency) {
+    try {
+      const response = await fetch(`https://api.nomics.com/v1/currencies?key=${process.env.api_key}&ids=${currency}`);
+      if (!response.ok) {
+        throw Error(response.statusText);
       }
-      request.open("GET", url, true);
-      request.send();
-    });
+      return response.json();
+    } catch(error) {
+      return error.message;
+    }
   }
 }
 
