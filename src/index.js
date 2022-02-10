@@ -12,7 +12,7 @@ function clearFields() {
 }
 
 function getElements(response) {
-  // console.log(response);
+  $('.book').hide();
   if (typeof response === "string") {
     $('#show-errors').text(`error on our end: ${response}`);
   } else if (!response[0]) {
@@ -33,13 +33,13 @@ function getElements(response) {
 
     $('#show-currency').html(`<h2>${response[0].name}</h2>${response[0].logo_url}`);
     $('#show-description').html(`<p id="description">${response[0].description}</p>`);
+    $('.book').show();
   }
 }
 
 async function makeApiCall(currency) {
   let response = await CryptoPedia.getCurrency(currency);
   getElements(response);
-  $('.book').show();
 }
 
 $(document).ready(function() {
