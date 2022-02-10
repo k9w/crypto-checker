@@ -16,12 +16,15 @@ Example API requests:
 Ticker for bitcoin (BTC):
 https://api.nomics.com/v1/currencies/ticker?key=your-key-here&ids=BTC
 
-Ticket for bitcoin (BTC) for the last 7 days:
+Ticker for bitcoin (BTC) for the last 7 days:
 https://api.nomics.com/v1/currencies/ticker?key=your-key-here&ids=BTC&interval=7d
 
 
+Nomics library for Node.JS, in TypeScript:
+https://github.com/mikunimaru/nomics
 
-[remaining template intent is below]
+
+[remaining template content is below]
 
 
 
