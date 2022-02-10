@@ -2,12 +2,33 @@
 
 body {
   margin: 100px;
+  background-image: url(https://pbs.twimg.com/media/DNOFZaAW4AEm3Yf.jpg);
+  background-size: 100%;
+  background-attachment: fixed;
+}
+
+p {
+  font-family: "forum";
+}
+
+.container {
+  background-color: rgba(223, 101, 101, 0.822);
+  padding-left: 5%;
+  padding-right: 5%;
+  border: solid black;
+  border-radius: 5%;
 }
 
 h1 {
   font-family: "Mea Culpa";
   text-align: center;
   font-size: 10em;
+}
+
+h2 {
+  font-family: "Mea Culpa";
+  text-align: center;
+  font-size: 8rem;
 }
 
 #attribution {
@@ -25,7 +46,10 @@ h1 {
 
 .row {
   background-color: bisque;
-  border: solid green 5px;
+  border: solid rgb(8, 87, 8) 10px;
+}
+  
+.book {
   display: none;
 }
 
@@ -35,4 +59,8 @@ h1 {
 
 h2 {
   text-align: center;
+}
+
+#show-description {
+  padding: 5%;
 }

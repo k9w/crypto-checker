@@ -11,19 +11,17 @@
     <h1>Cryptopedia</h1>
     <label for="search-field">Enter 3-digit currency code:</label>
     <input type="text" id="search-field" required>
-    <button id="get-crypto">go</button>
-    <div class="row">
-      <div class="col-6">
-        <p id="show-currency"></p>
-      </div>
-      <div class="col-6">
-        <p id="show-description"></p>
+    <button class="btn btn-dark" id="get-crypto">Fetch my crypto</button>
+    <div class="book">
+      <div class="row">
+        <div class="col-6" id="show-currency"></div>
+        <div class="col-6" id="show-description"></div>
       </div>
     </div>
     <p id="show-errors"></p>
+    <br>
+    <p id="attribution"><a target="_blank" href="https://nomics.com">Crypto Market Cap & Pricing Data Provided By Nomics</a>.</p>
   </div>
-  <br>
-  <p id="attribution"><a href="https://nomics.com">Crypto Market Cap & Pricing Data Provided By Nomics</a>.</p>
 </body>
 </html>
 

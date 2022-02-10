@@ -2,7 +2,7 @@ import $ from 'jquery';
 import 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './css/styles.css';
-import CryptoChecker from './js/crypto.js';
+import CryptoPedia from './js/crypto.js';
 
 function clearFields() {
   $('#search-field').val("");
@@ -12,30 +12,34 @@ function clearFields() {
 }
 
 function getElements(response) {
-  console.log(response);
+  // console.log(response);
   if (typeof response === "string") {
     $('#show-errors').text(`error on our end: ${response}`);
   } else if (!response[0]) {
     $('#show-errors').text(`error on your end: This currency doesn't exist. Try again!`);
     return;
   } else if (response[0]) {
+    let image = "https://thumbs.dreamstime.com/b/abstract-thoughtful-doubting-woman-question-mark-girl-solves-problem-chooses-solution-concept-doubt-ignorance-167617958.jpg";
     
     if (response[0].logo_url != "") {
       response[0].logo_url = `<img src="${response[0].logo_url}" class="logo">`;
+    }
+    else {
+      response[0].logo_url = `<img src="${image}" class="logo">`;
     }
     if (response[0].description === "") {
       response[0].description = "There is no description sadly";
     }
 
-    $('#show-currency').html(`<h2>Coin: ${response[0].name}.</h2>${response[0].logo_url}`);
-    $('#show-description').html(`${response[0].description}`);
+    $('#show-currency').html(`<h2>${response[0].name}</h2>${response[0].logo_url}`);
+    $('#show-description').html(`<p id="description">${response[0].description}</p>`);
   }
 }
 
 async function makeApiCall(currency) {
-  let response = await CryptoChecker.getCurrency(currency);
+  let response = await CryptoPedia.getCurrency(currency);
   getElements(response);
-  $('.row').show();
+  $('.book').show();
 }
 
 $(document).ready(function() {
