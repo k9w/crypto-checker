@@ -34,7 +34,6 @@ h2 {
   font-family: "Mea Culpa";
   text-align: center;
   font-size: 5em;
-  padding-top: 5%;
 }
 
 #attribution {
@@ -59,10 +58,8 @@ h2 {
 
 .col-6 {
   border: solid black;
-}
-
-h2 {
-  text-align: center;
+  padding-top: 5%;
+  padding-bottom: 5%;
 }
 
 #show-description {
