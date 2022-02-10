@@ -14,9 +14,7 @@
 * _[jQuery](https://jquery.com/)_
 * _[npm](https://www.npmjs.com)_
 * _[Webpack](https://webpack.js.org)_
-* _[Jest](https://jestjs.io)_
 * _[ESLint](https://eslint.org)_
-* _[Babel](https://babeljs.io)_
 * _[Dotenv](https://www.npmjs.com/package/dotenv)_
 
 ## Description
@@ -46,17 +44,12 @@ You can find more of our work at:
 
 * _[Get an API Key](https://p.nomics.com/cryptocurrency-bitcoin-api) and retain [the attribution](https://p.nomics.com/pricing#attribution) we've included in our HTML for personal use._
 
-
-> You'll need to include a "do follow" link on your home page that says "Crypto Market Cap & Pricing Data Provided By Nomics". Be sure to link the phrase "Crypto Market Cap & Pricing Data Provided By Nomics" to "https://nomics.com". Your attribution should look like the following:
-
-> [Crypto Market Cap & Pricing Data Provided By Nomics](https://nomics.com).
-
-
-
 * _You'll need the Node Package Manager (npm) to build the project. To set it up, install [Node JS](https://nodejs.org) for your platform._
 
 * _Install webpack and other packages listed above and in package.json
-  by typing 'npm install' just one time._
+  and type:_
+  
+  ```$ npm install```
 
 * The decision to install specific, OLD, versions of these packages
   was dictated by the curriculum assignment.
@@ -67,15 +60,12 @@ You can find more of our work at:
   the project folder.
 
 * _Build and bundle the project from the src/ folder into the dist/
-  folder with 'npm run build' to just build it; or run 'npm run start' to
-  build it and start the local Webpack server._
-
-* The reason to 'build' the web application in this manner is to
-  consolidate and minify most of the code into dist/bundle.js. Very
-  large projects are best developed as multiple files and
-  human-readable code. But the larger they get, the slower they can
-  run in the browser.  Concatenating and minifying into one file
-  speeds up the code in the browser.
+  folder with:_
+  
+  ```$ npm run build```
+  
+  _To just build it; or run 'npm run start' to build it and start the 
+  local Webpack server._
 
 * _If you like this project, please contribute issues and especially
   pull requests to improve it._

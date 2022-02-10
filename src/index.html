@@ -8,11 +8,18 @@
 </head>
 <body>
   <div class="container">
-    <h1>Crypto Encyclopedia</h1>
+    <h1>Cryptopedia</h1>
     <label for="search-field">Enter 3-digit currency code:</label>
-    <input type="text" id="search-field">
+    <input type="text" id="search-field" required>
     <button id="get-crypto">go</button>
-    <p id="show-currency"></p>
+    <div class="row">
+      <div class="col-6">
+        <p id="show-currency"></p>
+      </div>
+      <div class="col-6">
+        <p id="show-description"></p>
+      </div>
+    </div>
     <p id="show-errors"></p>
   </div>
   <br>

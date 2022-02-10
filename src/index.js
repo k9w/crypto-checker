@@ -8,6 +8,7 @@ function clearFields() {
   $('#search-field').val("");
   $('#show-currency').html("");
   $('#show-errors').html("");
+  $('#show-description').html("");
 }
 
 function getElements(response) {
@@ -18,16 +19,23 @@ function getElements(response) {
     $('#show-errors').text(`error on your end: This currency doesn't exist. Try again!`);
     return;
   } else if (response[0]) {
-    $('#show-currency').text(`Here is the description for ${response[0].name}. ${response[0].description}`);
-    if (response[0].description === "") {
-      $('#show-currency').text(`There is no description for ${response[0].name}.`);
+    
+    if (response[0].logo_url != "") {
+      response[0].logo_url = `<img src="${response[0].logo_url}" class="logo">`;
     }
+    if (response[0].description === "") {
+      response[0].description = "There is no description sadly";
+    }
+
+    $('#show-currency').html(`<h2>Coin: ${response[0].name}.</h2>${response[0].logo_url}`);
+    $('#show-description').html(`${response[0].description}`);
   }
 }
 
 async function makeApiCall(currency) {
   let response = await CryptoChecker.getCurrency(currency);
   getElements(response);
+  $('.row').show();
 }
 
 $(document).ready(function() {
