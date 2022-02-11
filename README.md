@@ -19,14 +19,15 @@
 
 ## Description
 
-Welcome to our second two-day project in week 3 of Intermediate JavaScript at
-[Epicodus](https://epicodus.com).
+Welcome to our second two-day project in week 3 of Intermediate
+JavaScript at [Epicodus](https://epicodus.com).
 
 We started it on Wednesday February 9th 2022 from [this project's
 lesson](https://www.learnhowtoprogram.com/intermediate-javascript/asynchrony-and-apis/martian-weather-bike-index-api-of-choice-two-day-project)
 in the [curriculum](https://learnhowtoprogram.com/).
 
-This project uses the [Nomics Crypto API](https://p.nomics.com/cryptocurrency-bitcoin-api).
+This project uses the [Nomics Crypto
+API](https://p.nomics.com/cryptocurrency-bitcoin-api).
 
 You can find more of our work at:
 
@@ -42,9 +43,13 @@ You can find more of our work at:
 * _Clone the project from your repo to your machine or preferred
   location and cd into its folder._
 
-* _[Get an API Key](https://p.nomics.com/cryptocurrency-bitcoin-api) and retain [the attribution](https://p.nomics.com/pricing#attribution) we've included in our HTML for personal use._
+* _[Get an API Key](https://p.nomics.com/cryptocurrency-bitcoin-api)
+  and retain [the
+  attribution](https://p.nomics.com/pricing#attribution) we've
+  included in our HTML for personal use._
 
-* _You'll need the Node Package Manager (npm) to build the project. To set it up, install [Node JS](https://nodejs.org) for your platform._
+* _You'll need the Node Package Manager (npm) to build the project. To
+  set it up, install [Node JS](https://nodejs.org) for your platform._
 
 * _Install webpack and other packages listed above and in package.json
   and type:_
