@@ -1,3 +1,11 @@
+# This file is meant to fix the CORS error on the hosted site on Netlify which gets the following error:
+
+Cross-Origin Request Blocked: The Same Origin Policy disallows reading the remote resource at https://api.nomics.com/v1/currencies?key=undefined&ids=ETH. (Reason: CORS header ‘Access-Control-Allow-Origin’ missing). Status code: 401.
+
+# But the fix below does not work. Need to research toml further at:
+
+https://github.com/toml-lang/toml
+
 
 [[redirects]]
   from = "/*"
